@@ -12,8 +12,9 @@ function Large(obj) {
     //imgBox.style.left = (window.innerWidth / 2 - obj.width / obj.height * imgHeight / 2) + 'px';      
     imgBox.innerHTML = '';
     imgBox.appendChild(img);
-}
-function initGallery() {
+};
+
+
     var kva = 700;
     var kvaposition = 0;
     var list = gacon.querySelector('ul');
@@ -32,4 +33,3 @@ function initGallery() {
                 alert('Нона пидор');
         };
     };
-};
