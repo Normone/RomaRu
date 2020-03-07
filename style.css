@@ -1,0 +1,269 @@
+/*-------------------- Высшие родители ------------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: square;
+    font-family: "Roboto", sans-serif;
+    src: URL('TTF/Roboto.TTF'), format('truetype');
+}
+
+@font-face {
+    font-family: "Roboto";
+    SRC: local("Roboto"),
+    URL('TTF/Roboto.TTF');
+    font-family: "Droid Sans Mono Slashed";
+    SRC: local("Droid Sans Mono Slashed"),
+    URL('TTF/Droid.TTF');
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 100px auto 100px;
+    grid-row-gap: 10px;
+    background-color: #F7F7F7;
+}
+
+header {
+    background-color: rgb(254, 255, 246);
+    grid-column: 1/4;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 12px;
+}
+
+footer {
+    background-color: #fff;
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+/*--------------------- Вторичные родители ------------------*/
+.container {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #fff;
+}
+
+/*----------------------- Блок с описанием -------------------*/
+/*----------------------- На него можно забить -------------------*/
+.pattern-name {
+    margin-left: 60px;
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.pattern-undername {
+    font-style: italic;
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+.pattern-status {
+    margin: 45px 0px 25px 15px;
+}
+.pattern-square {
+    margin-left: 35px;
+}
+.square-blue {
+    color: navy;
+}
+.square-gray {
+    color: slategray;
+}
+.square-red {
+    color: firebrick;
+}
+
+/* ------------ Общий текст -----------*/
+
+gray {
+    color: gray;
+}
+
+p {
+    line-height: 1.2;
+    margin: 5px 0px 5px 15px;
+    padding-left: 5px;
+}
+
+span {
+    color: black;
+}
+
+/* ---------- Заголовки ----------------*/
+h1 {
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+    font-family: "Droid Sans Mono Slashed";
+    src: URL('TTF/Droid.TTF'), format('truetype');
+    font-variant: small-caps;
+    font-size: 30px;
+}
+h2 {
+    padding: 0px 0px 15px 50px;
+    font-family: "Droid Sans Mono Slashed";
+    src: URL('TTF/Droid.TTF'), format('truetype');
+	font-variant: small-caps;
+}
+
+/* -------- Горизонтальная полоса -------*/
+hr {
+    margin: 40px 35px 40px 35px;
+}
+/* -------- Списки ----------------------*/
+ul {
+    margin: -15px 10px 0px 15px;
+}
+li {
+    margin-top: 12px;
+}
+
+a {
+    color: #0563C1;
+    line-height: 1.2;
+    text-decoration: underline;
+    margin-left: 3px;
+}
+
+
+/* ------- Маркеры -------------*/
+.red {
+    color: firebrick;
+    font-size: 32px;
+    margin-left: 45px;
+}
+.blue {
+    color: navy;
+    font-size: 32px;
+    margin-left: 45px;
+}
+.gray {
+    color: slategray;
+    font-size: 32px;
+    margin-left: 45px;
+}
+/* -------- Блок с инфой ------*/
+
+.block {
+    padding-bottom: 40px;
+}
+
+.status {
+    font-size: 25px;
+    font-weight: 500;
+    text-indent: 35.4pt;
+    color: black;
+}
+
+details > ul > li {
+    list-style-type: none;
+}
+
+details > ul {
+    background: #fbfbfb;
+    border: 1px solid #e6e6e6;
+}
+summary {
+    list-style-type: none;
+    margin: 20px 80% 15px 15px;
+    padding: 10px 20px 10px 0px;
+    text-align: center;
+    background-color: #e6e6e6;
+    outline: none;
+}
+summary::selection {
+    background: transparent;
+}
+summary::-moz-selection {
+    background: transparent;
+}
+
+/* ------------ картинки ------------ */
+
+.gallery {
+    margin: 40px 0px 40px 0px;
+    height: 200px;
+    width: 878px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gallery > ul > li {
+    display: inline-block
+}
+.images {
+    transition: margin-left 200ms;
+    width: 9999px;
+    margin: -15px 10px 0px 0px;;
+}
+IMG {
+    height: 200px;
+    padding: 0px 5px 0px 5px;
+    display:block
+}
+
+#imgbox {
+    background-color: #000000a8;
+    z-index: 999999;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    display: none;
+}
+#imgbox > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+/* --0-0-0-- */
+.manag {
+    position: relative;
+}
+.left {
+    width: 15px;
+    height: 197px;
+    position: absolute;
+    background-color: red;
+    left: 0px;
+}
+.right {
+    width: 15px;
+    height: 197px;
+    position: absolute;
+    background-color: red;
+    right: 0px;
+}
+/* --------------------------------------------------------*/
+
+@media screen and (min-width: 2500px) {
+    .gallery {
+        width: 1500px;
+    }
+    h1 {
+        font-size: 44px;
+    }
+    h2 {
+        font-size: 34px;
+    }
+    p {
+        font-size: 26px;
+    }
+    .pattern-name {
+        font-size: 32px;
+    }
+    .pattern-square {
+        font-size: 22px;
+    }
+    .block {
+        padding-top: 24px;
+    }
+    details > ul > li {
+        font-size: 20px;
+    }
+}
