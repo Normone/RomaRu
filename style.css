@@ -226,18 +226,20 @@ IMG {
     position: relative;
 }
 .left {
-    width: 15px;
-    height: 197px;
+    width: 28px;
+    height: 100px;
     position: absolute;
     background-color: red;
     left: 0px;
+    margin-top: 50px;
 }
 .right {
-    width: 15px;
-    height: 197px;
+    width: 28px;
+    height: 100px;
     position: absolute;
     background-color: red;
     right: 0px;
+    margin-top: 50px;
 }
 /* --------------------------------------------------------*/
 
