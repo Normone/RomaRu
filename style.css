@@ -232,7 +232,7 @@ IMG {
     background-color: red;
     left: 0px;
     margin-top: 50px;
-    background: left 0% / 100% 200% no-repeat url('IMG/arrow.png');
+    background: left 5% / 100% 200% no-repeat url('IMG/arrow.png');
 }
 .right {
     width: 28px;
